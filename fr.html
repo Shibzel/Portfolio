@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibzel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <!-- <h1>Shibzel</h1> -->
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li>A Propos</a></li> <!-- /about and /projects are in wip -->
+                    <li>Projets</a></li>
+                    <li><a href="mailto:contact@shibzel.com">Contactez Moi</a></li>
+                    <li>|</li>
+                    <li><a href="./">🇬🇧</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile">
+            <img src="static/profile.png" alt="Profile Picture">
+            <h2>Shibzel</h2>
+            <div class="biography">
+                <p>Salut ! Je m'appelle <u>Jean-François</u> (appellez-moi Jean). J'ai 17 ans et je suis français (cocorico).</p>
+                <p>Je connais bien Python et je peux bricoler avec du SQLite 3, du HTML/CSS et Linux. En ce moment, j'apprends Rust avec la
+                    possibilité de créer un jeu en tête. Si cela se concrétise, j'envisagerais sûrement de créer un devlog à ce sujet sur ma
+                    <a href="https://www.youtube.com/@Shibzel" target="_blank">chaîne YouTube</a>.</p>
+                <p>À part ça, j'aime passer mon temps libre à jouer à Minecraft et à écouter de la musique électronique :3</p>
+            </div>
+
+            <div class="social-icons">
+                <!-- <a href="https://www.youtube.com/@Shibzel" target="_blank"><img src="static/icons/youtube-icon.png" alt="Youtube"></a> -->
+                <a href="https://github.com/Shibzel" target="_blank"><img src="static/icons/github-icon.png"
+                        alt="Github"></a>
+                <a href="https://twitter.com/@Shibzel_" target="_blank"><img src="static/icons/twitter-icon.png"
+                        alt="Twitter"></a>
+                <a href="#" id="discord-logo">
+                    <img src="static/icons/discord-icon.png" alt="Discord">
+                </a>
+            </div>
+        </div>
+
+        <div id="popup-message" class="popup">
+            Le tag <u><span id="copied-tag"></span></u> a été copié dans votre presse papier. Vous pouvez désormais le mettre sur Discord.
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Ce site est encore en construction parce que j'ai trop la flemme de le compléter.</p>
+        <p>&copy; 2023 Shibzel · Réalisé à partir de zéro, le code source est disponible <a href="https://github.com/Shibzel/shibzel.com" target="_blank">ici</a>.</p>
+    </footer>
+
+    <script src="scripts/discord-clipboard.js"></script>
+</body>
+
+</html>

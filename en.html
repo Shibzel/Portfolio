@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibzel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <!-- <h1>Shibzel</h1> -->
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li>About</a></li> <!-- /about and /projects are in wip -->
+                    <li>Projects</a></li>
+                    <li><a href="mailto:contact@shibzel.com">Contact Me</a></li>
+                    <li>|</li>
+                    <li><a href="fr">🇫🇷</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile">
+            <img src="static/profile.png" alt="Profile Picture">
+            <h2>Shibzel</h2>
+            <div class="biography">
+                <p>Hi there ! My name is <u>Jean-François</u> (call me Jean). I'm 17 y.o and from France.</p>
+                <p>I know Python and I can tinker with SQLite 3, HTML/CSS, and Linux. I'm currently
+                learning Rust with the possibility of creating a game. If that happens, I might consider making a devlog about it on my
+                <a href="https://www.youtube.com/@Shibzel" target="_blank">YouTube channel</a>.</p>
+                <p>On another note, I like to spend my free time playing minecraft and listening to electronic music :3</p>
+            </div>
+            <div class="social-icons">
+                <!-- <a href="https://www.youtube.com/@Shibzel" target="_blank"><img src="static/icons/youtube-icon.png" alt="Youtube"></a> -->
+                <a href="https://github.com/Shibzel" target="_blank"><img src="static/icons/github-icon.png" alt="Github"></a>
+                <a href="https://twitter.com/@Shibzel_" target="_blank"><img src="static/icons/twitter-icon.png" alt="Twitter"></a>
+                <a href="#" id="discord-logo">
+                    <img src="static/icons/discord-icon.png" alt="Discord">
+                </a>
+            </div>
+        </div>
+
+        <div id="popup-message" class="popup">
+            The tag <u><span id="copied-tag"></span></u> has been copied to your clipboard. You can now paste it into Discord.
+        </div>
+    </main>
+
+
+    <footer>
+        <p>This website is still in work a progress beacause I'm too lazy to make it right.</p>
+        <p>&copy; 2023 Shibzel · Made from scrach, the source code is available <a href="https://github.com/Shibzel/shibzel.com" target="_blank">here</a>.</p>
+    </footer>
+
+    <script src="scripts/discord-clipboard.js"></script>
+</body>
+
+</html>
