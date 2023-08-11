@@ -11,9 +11,9 @@ document.getElementById('discord-logo').addEventListener('click', function () {
     const popupMessage = document.getElementById('popup-message');
     const copiedTagElement = document.getElementById('copied-tag');
     copiedTagElement.textContent = discordTag;
-    popupMessage.style.display = 'block';
+    popupMessage.style.opacity = '1';
 
     setTimeout(function () {
-        popupMessage.style.display = 'none';
+        popupMessage.style.opacity = '0';
     }, 7000);
 });
