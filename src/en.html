@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shibzel · Portfolio</title>
     <link rel="icon" href="static/icons/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="static/icons/favicon.ico" type="image/x-icon">
+    <title>Shibzel</title>
+    <meta name="description"
+        content="Placeholder" /> <!-- TODO: Complete. -->
     <link rel="stylesheet" href="static/styles.css">
     <script defer src="scripts/discord-clipboard.js"></script>
     <script defer src="scripts/title-scroll.js"></script>
     <script defer src="scripts/nose-click.js"></script>
-    <link rel="preload" href="static/audio/honk.mp3" as="audio">
-    <link rel="preload" href="static/audio/metal-pipe.mp3" as="audio">
 </head>
 
 <body>
-    <div id="popup-message" class="popup" id="">
-            The tag <u><span id="copied-tag"></span></u> has been copied to your clipboard. You can now paste it into Discord.
+    <div id="popup-message" class="popup">
+        The tag <u><span id="copied-tag"></span></u> has been copied to your clipboard. You can now paste it into Discord.
     </div>
 
-    <header>
+    <header class="larger-padding-container">
         <div class="header-title">
-            <a href="#">Shibzel</a>
+            <a href="#profile">Shibzel</a>
         </div>
         <div class="header-right">
             <nav class="header-nav">
@@ -37,44 +37,54 @@
         </div>
     </header>
     
-    <div class="container">
-        <img src="static/profile-image.webp?width=375&height=375" alt="Profile Picture" class="profile-image", id="profile-image">
-        <div class="biography">
-            <h2>Shibzel</h2>
-            <p>Hi there ! My name is <u>Jean-François</u> (call me Jean). I'm 17 y.o and from France.</p>
-            <p>I know Python and I can tinker with SQLite 3, HTML/CSS, and Linux. I'm currently
-                learning Rust with the possibility of creating a game. If that happens, I might consider making a devlog
-                about it on my
-                <a href="https://www.youtube.com/@Shibzel" target="_blank">YouTube channel</a>.
-            </p>
-            <p>On another note, I like to spend my free time playing minecraft and listening to electronic music :3</p>
-            <div class="social-icons">
-                <a href="https://youtube.com/@Shibzel" target="_blank"><img src="static/icons/social/youtube.webp?width=64&height=64" alt="Youtube"></a>
-                <a href="https://github.com/Shibzel" target="_blank"><img src="static/icons/social/github.webp?width=64&height=64" alt="Github"></a>
-                <a href="https://twitter.com/@Shibzel_" target="_blank"><img src="static/icons/social/twitter.webp?width=64&height=64" alt="Twitter"></a>
-                <a href="#" id="discord-logo">
-                    <img src="static/icons/social/discord.webp?width=64&height=64" alt="Discord">
-                </a>
-                <a href="https://stats.fm/shibzel" target="_blank"><img src="static/icons/social/spotify.webp?width=64&height=64"
-                        alt="Spotify (redirecting to Stats.fm)"></a>
+    <main>
+        <section id="profile">
+            <div class="content-container padding-container">
+                <div class="mobile-profile-container">
+                    <img src="static/profile-image.webp" alt="Profile Picture" class="profile-image" id="profile-image">
+                    <div class="profile">
+                        <h2>Shibzel</h2>
+                        <p>Hi there ! My name is <u>Jean-François</u> (call me Jean). I'm 17 y.o and I'm from France.</p>
+                        <p>I'm known for procrastinating and sleeping a lot :P</p>
+                        <div class="social-icons">
+                            <a href="https://youtube.com/@Shibzel" target="_blank"><img src="static/icons/social/youtube.webp" alt="Youtube"></a>
+                            <a href="https://github.com/Shibzel" target="_blank"><img src="static/icons/social/github.webp" alt="Github"></a>
+                            <a href="https://twitter.com/@Shibzel_" target="_blank"><img src="static/icons/social/twitter.webp" alt="Twitter"></a>
+                            <a href="#profile" id="discord-logo">
+                                <img src="static/icons/social/discord.webp" alt="Discord">
+                            </a>
+                            <a href="https://stats.fm/shibzel" target="_blank"><img src="static/icons/social/spotify.webp"
+                                    alt="Spotify (redirecting to Stats.fm)"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+        
+        <div class="spacer layer1"></div>
 
-    <div class="black">
-        <div class="container" id="about">
-            aaa
-        </div>
+        <div class="black">
+            <div class="padding-container">
+                <section id="about">
+                    <div class="content-container">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, fuga atque! Tenetur ratione, vitae accusantium fugit quisquam, at perspiciatis, quos officia autem possimus expedita iste nulla reprehenderit dolore ea provident.
+                    </div>
+                </section>
+                
+                <section id="projects">
+                    <div class="content-container">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit incidunt consequatur asperiores, quisquam qui sunt ut ad quibusdam sint quod harum itaque quas minima. Incidunt enim harum soluta mollitia qui?
+                    </div>
+                </section>
+            </div>
 
-        <div class="container" id="projects">
-            aaa
+            <div class="spacer layer2"></div>
         </div>
-
-        <footer>
-            &copy; 2023 Shibzel · Made from scrach, the source code is available <a
-                    href="https://github.com/Shibzel/shibzel.com" target="_blank">here</a>.
-        </footer>
-    </div>
+    </main>
+    
+    <footer class="padding-container">
+        Copyright &copy; 2023 Shibzel · Made from scrach, the source code is available <a href="https://github.com/Shibzel/shibzel.com" target="_blank">here</a>.
+    </footer>
 </body>
 
 </html>
