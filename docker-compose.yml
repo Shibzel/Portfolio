@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  lighttpd:
+    image: jitesoft/lighttpd:latest
+    ports:
+      - 5897:80
+    volumes:
+      - ./src:/var/www/html
+    restart: unless-stopped
+    environment:
+      - PORT=80
+      - SERVER_NAME=localhost
+      - SERVER_ROOT=/var/www/html
+      - CONFIG_FILE=/etc/lighttpd/lighttpd.conf
+      - SKIP_HEALTHCHECK=false
+      - MAX_FDS=1024
